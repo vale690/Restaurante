@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante Fusión</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+    <h1>Restaurante Fusión</h1>
+    <p class="slogan">“Donde los sabores se encuentran.”</p>
+
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#conceptos">Conceptos</a>
+        <a href="#menu">Menú</a>
+        <a href="#platos">Platos</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+</header>
+
+<!-- INICIO -->
+<section id="inicio">
+    <h2>Bienvenido</h2>
+    <p>
+        En Restaurante Fusión te ofrecemos una experiencia gastronómica única,
+        combinando sabores tradicionales con modernos.
+    </p>
+</section>
+
+<!-- CONCEPTOS -->
+<section id="conceptos">
+    <h2>Conceptos</h2>
+
+    <p>
+        Un restaurante es un lugar donde se preparan y sirven alimentos y bebidas.
+    </p>
+
+    <p>
+        La gastronomía fusión mezcla ingredientes y técnicas de diferentes culturas.
+    </p>
+
+    <p>
+        Nuestro objetivo es brindar calidad, sabor y una excelente experiencia.
+    </p>
+</section>
+
+<!-- MENÚ -->
+<section id="menu">
+    <h2>Menú</h2>
+
+    <h3>Desayunos</h3>
+    <label><input type="radio" name="desayuno"> Arepa con queso</label><br>
+    <label><input type="radio" name="desayuno"> Huevos revueltos</label>
+
+    <h3>Almuerzos</h3>
+    <label><input type="radio" name="almuerzo"> Pollo asado</label><br>
+    <label><input type="radio" name="almuerzo"> Carne a la plancha</label>
+
+    <h3>Comidas rápidas</h3>
+    <label><input type="radio" name="fastfood"> Hamburguesa</label><br>
+    <label><input type="radio" name="fastfood"> Perro caliente</label>
+
+    <h3>Postres</h3>
+    <label><input type="radio" name="postre"> Helado</label><br>
+    <label><input type="radio" name="postre"> Flan</label>
+</section>
+
+<!-- PLATOS + TABLA -->
+<section id="platos">
+    <h2>Platos del Restaurante</h2>
+
+    <input type="text" id="buscar" placeholder="Buscar plato...">
+
+    <table>
+        <thead>
+            <tr>
+                <th>Plato</th>
+                <th>Categoría</th>
+                <th>Precio</th>
+            </tr>
+        </thead>
+
+        <tbody id="tablaPlatos">
+            <tr>
+                <td>Hamburguesa</td>
+                <td>Comida rápida</td>
+                <td>$12.000</td>
+            </tr>
+
+            <tr>
+                <td>Pollo asado</td>
+                <td>Almuerzo</td>
+                <td>$18.000</td>
+            </tr>
+
+            <tr>
+                <td>Helado</td>
+                <td>Postre</td>
+                <td>$6.000</td>
+            </tr>
+
+            <tr>
+                <td>Arepa con queso</td>
+                <td>Desayuno</td>
+                <td>$5.000</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto">
+    <h2>Contacto</h2>
+    <p>Escríbenos para reservas o pedidos especiales.</p>
+    <p>Email: contacto@restaurantefusion.com</p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>Restaurante Fusión - Valeris Causil | 2026</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
