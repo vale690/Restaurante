@@ -1,134 +1,245 @@
-/* RESET */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
+/*=========================================
+  RESTAURANTE FUSIÓN
+=========================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* FONDO GENERAL */
-body {
-    background: #0f2f3a; /* azul petróleo */
-    color: #ffffff;
-    line-height: 1.6;
+body{
+    background:#eef7f8;
+    color:#1f2937;
+    line-height:1.6;
 }
 
-/* HEADER */
-header {
-    background: #0b3d4a;
-    padding: 20px;
-    text-align: center;
-    border-bottom: 3px solid #1abc9c; /* turquesa */
+/*========================
+ ENCABEZADO
+========================*/
+
+header{
+    width:100%;
+    background:#0f4c5c;
+    color:#fff;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 8%;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 4px 15px rgba(0,0,0,.25);
 }
 
-header h1 {
-    font-size: 32px;
-    color: #1abc9c;
+.logo h1{
+    font-size:32px;
+    color:#ffd166;
 }
 
-.slogan {
-    margin-top: 5px;
-    font-style: italic;
-    color: #d1f7f0;
+.logo p{
+    color:#ffffff;
+    font-size:15px;
+    margin-top:5px;
 }
 
-/* NAV */
-nav {
-    margin-top: 15px;
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:25px;
 }
 
-nav a {
-    text-decoration: none;
-    color: white;
-    background: #145a6a;
-    padding: 8px 12px;
-    margin: 5px;
-    display: inline-block;
-    border-radius: 5px;
-    transition: 0.3s;
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    font-weight:600;
+    transition:.3s;
 }
 
-nav a:hover {
-    background: #1abc9c;
-    color: #0f2f3a;
+nav ul li a:hover{
+    color:#2ec4b6;
 }
 
-/* SECCIONES */
-section {
-    margin: 20px;
-    padding: 20px;
-    background: #123c4a;
-    border-radius: 10px;
+/*========================
+ INICIO
+========================*/
+
+#inicio{
+    min-height:90vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:40px;
+    background:linear-gradient(rgba(15,76,92,.75),
+                               rgba(15,76,92,.75)),
+               url("img/banner.jpg");
+    background-size:cover;
+    background-position:center;
+    color:white;
 }
 
-/* TITULOS */
-h2 {
-    color: #1abc9c;
-    margin-bottom: 10px;
+#inicio h2{
+    font-size:52px;
+    margin-bottom:20px;
 }
 
-h3 {
-    margin-top: 15px;
-    color: #d1f7f0;
+#inicio p{
+    max-width:750px;
+    font-size:20px;
+    margin-bottom:35px;
 }
 
-/* PÁRRAFOS */
-p {
-    margin-bottom: 10px;
+#inicio button{
+    background:#2ec4b6;
+    color:white;
+    border:none;
+    padding:15px 40px;
+    border-radius:40px;
+    font-size:18px;
+    cursor:pointer;
+    transition:.3s;
 }
 
-/* MENÚ RADIO BUTTONS */
-label {
-    display: block;
-    margin: 5px 0;
+#inicio button:hover{
+    background:#ffd166;
+    color:#0f4c5c;
+    transform:scale(1.05);
 }
 
-/* INPUT BUSCADOR */
-#buscar {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: none;
-    border-radius: 5px;
+/*========================
+ TÍTULOS
+========================*/
+
+section h2{
+    text-align:center;
+    font-size:38px;
+    color:#0f4c5c;
+    margin-bottom:40px;
 }
 
-/* TABLA */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 10px;
-    background: #0b3d4a;
+section{
+    padding:80px 8%;
 }
 
-table th, table td {
-    border: 1px solid #1abc9c;
-    padding: 10px;
-    text-align: center;
+/*========================
+ PLATO DEL DÍA
+========================*/
+
+#plato-dia{
+    background:#ffffff;
 }
 
-table th {
-    background: #145a6a;
-    color: white;
+.plato-dia-card{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:40px;
+    background:white;
+    border-radius:20px;
+    padding:30px;
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+    flex-wrap:wrap;
 }
 
-/* FOOTER */
-footer {
-    text-align: center;
-    padding: 15px;
-    margin-top: 20px;
-    background: #0b3d4a;
-    border-top: 2px solid #1abc9c;
+.plato-dia-card img{
+    width:380px;
+    height:260px;
+    object-fit:cover;
+    border-radius:15px;
 }
 
-/* RESPONSIVE */
-@media (max-width: 768px) {
-    nav a {
-        display: block;
-        text-align: center;
-    }
+.plato-info{
+    max-width:500px;
+}
 
-    section {
-        margin: 10px;
-        padding: 15px;
-    }
+.plato-info h3{
+    font-size:32px;
+    color:#0f4c5c;
+    margin-bottom:15px;
+}
+
+.plato-info p{
+    font-size:18px;
+    margin-bottom:20px;
+    color:#555;
+}
+
+.plato-info h4{
+    font-size:28px;
+    color:#2ec4b6;
+    margin-bottom:20px;
+}
+
+.plato-info button{
+    background:#0f4c5c;
+    color:white;
+    border:none;
+    padding:12px 30px;
+    border-radius:30px;
+    cursor:pointer;
+    font-size:16px;
+    transition:.3s;
+}
+
+.plato-info button:hover{
+    background:#ffd166;
+    color:#0f4c5c;
+    transform:scale(1.05);
+}
+
+/*========================
+ MENÚ
+========================*/
+
+#menu{
+    background:#eef7f8;
+}
+
+#menu details{
+    background:white;
+    margin-bottom:18px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.10);
+    overflow:hidden;
+}
+
+#menu summary{
+    list-style:none;
+    cursor:pointer;
+    padding:20px;
+    font-size:22px;
+    font-weight:bold;
+    color:#0f4c5c;
+    transition:.3s;
+}
+
+#menu summary:hover{
+    background:#2ec4b6;
+    color:white;
+}
+
+#menu ul{
+    list-style:none;
+    padding:15px 30px 25px;
+}
+
+#menu ul li{
+    padding:12px 0;
+    border-bottom:1px solid #ddd;
+    cursor:pointer;
+    transition:.3s;
+    font-size:18px;
+}
+
+#menu ul li:last-child{
+    border-bottom:none;
+}
+
+#menu ul li:hover{
+    color:#2ec4b6;
+    padding-left:10px;
 }
