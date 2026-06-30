@@ -1,303 +1,592 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
     <title>Restaurante Fusión</title>
 
-    <!-- Hoja de estilos -->
     <link rel="stylesheet" href="style.css">
 
-    <!-- Iconos -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="icon" href="img/logo.png">
+
 </head>
 
 <body>
 
-    <!-- ========================= -->
-    <!-- ENCABEZADO -->
-    <!-- ========================= -->
-    <header>
+<!--==================================
+ENCABEZADO
+===================================-->
 
-        <div class="logo">
-            <h1>🍽️ Restaurante Fusión</h1>
-            <p>Donde los sabores se encuentran.</p>
+<header>
+
+    <div class="logo">
+
+        <img src="img/logo.png"
+             alt="Logo Restaurante Fusión">
+
+    </div>
+
+    <nav>
+
+        <ul>
+
+            <li><a href="#" id="btnInicio">Inicio</a></li>
+
+            <li><a href="#" id="btnNosotros">Nosotros</a></li>
+
+            <li><a href="#menu">Menú</a></li>
+
+            <li><a href="#promociones">Promociones</a></li>
+
+            <li><a href="#pedidos">Pedidos</a></li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+<!--==================================
+PÁGINA PRINCIPAL
+===================================-->
+
+<main id="principal">
+
+<!--==================================
+PORTADA
+===================================-->
+
+<section id="inicio">
+
+    <div class="texto-inicio">
+
+        <h2>RESTAURANTE</h2>
+
+        <h1>FUSIÓN</h1>
+
+        <p>Donde los sabores se encuentran.</p>
+
+        <button id="verMenu">
+
+            Ver Menú
+
+        </button>
+
+    </div>
+
+    <div class="imagen-portada">
+
+        <img src="img/banner.jpg"
+             alt="Plato Principal">
+
+    </div>
+
+</section>
+<!--==================================
+NOSOTROS
+(Esta sección estará oculta al iniciar)
+===================================-->
+
+<section id="nosotros" class="oculto">
+
+    <div class="contenedor-nosotros">
+
+        <div class="imagen-nosotros">
+
+            <img src="img/nosotros.jpg"
+                 alt="Restaurante Fusión">
+
         </div>
 
-        <nav>
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#plato-dia">Plato del Día</a></li>
-                <li><a href="#menu">Menú</a></li>
-                <li><a href="#promociones">Promociones</a></li>
-                <li><a href="#galeria">Galería</a></li>
-                <li><a href="#qr">Código QR</a></li>
-            </ul>
-        </nav>
+        <div class="texto-nosotros">
 
-    </header>
+            <h2>Restaurante Fusión</h2>
 
-    <!-- ========================= -->
-    <!-- INICIO -->
-    <!-- ========================= -->
-    <section id="inicio">
+            <p>
 
-        <h2>¡Bienvenido a Restaurante Fusión!</h2>
+                En Restaurante Fusión creemos que cada comida
+                es una oportunidad para compartir momentos
+                especiales. Preparamos nuestros platos con
+                ingredientes frescos, recetas tradicionales y
+                un excelente servicio para brindarte una
+                experiencia llena de sabor.
+
+            </p>
+
+            <button id="volverInicio">
+
+                Volver al Inicio
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--==================================
+PLATO DEL DÍA
+===================================-->
+
+<section id="platoDia">
+
+    <div class="imagen-plato">
+
+        <img src="img/plato-dia.jpg"
+             alt="Plato del Día">
+
+    </div>
+
+    <div class="informacion-plato">
+
+        <h4>⭐ PLATO DEL DÍA</h4>
+
+        <h2>Bagre Frito con Arroz de Coco</h2>
 
         <p>
-            Disfruta de una experiencia llena de sabor con nuestros
-            platos preparados especialmente para ti.
+
+            Delicioso bagre frito acompañado de
+            arroz de coco, patacón, ensalada fresca
+            y limón.
+
         </p>
 
-        <button>Ver Menú</button>
+        <h3>$32.000</h3>
 
-    </section>
+        <button id="verDetalles">
 
-        <!-- ========================= -->
-    <!-- PLATO DEL DÍA -->
-    <!-- ========================= -->
-    <section id="plato-dia">
+            Ver detalles
 
-        <h2>⭐ Plato del Día</h2>
+        </button>
 
-        <div class="plato-dia-card">
+    </div>
 
-            <img src="img/plato-dia.jpg" alt="Plato del Día">
+    <div class="beneficios">
 
-            <div class="plato-info">
+        <div class="beneficio">
 
-                <h3>Pescado Frito con Arroz de Coco</h3>
+            <h4>Ingredientes frescos</h4>
 
-                <p>
-                    Delicioso pescado frito acompañado de arroz de coco,
-                    patacón y ensalada fresca.
-                </p>
-
-                <h4>$32.000</h4>
-
-                <button>Ver más</button>
-
-            </div>
+            <p>Seleccionados todos los días.</p>
 
         </div>
 
-    </section>
+        <div class="beneficio">
 
-    <!-- ========================= -->
-    <!-- MENÚ -->
-    <!-- ========================= -->
-    <section id="menu">
+            <h4>Preparado al momento</h4>
 
-        <h2>🍽️ Nuestro Menú</h2>
-
-        <!-- DESAYUNOS -->
-        <details>
-
-            <summary>🍳 Desayunos</summary>
-
-            <ul>
-                <li>Arepa de huevo</li>
-                <li>Carimañola de queso o carne</li>
-                <li>Bollo limpio con queso costeño</li>
-                <li>Suero costeño con yuca cocida</li>
-                <li>Huevos pericos con arepa y queso costeño</li>
-                <li>Chocolate caliente o café con pan</li>
-            </ul>
-
-        </details>
-
-        <!-- ALMUERZOS -->
-        <details>
-
-            <summary>🍛 Almuerzos</summary>
-
-            <ul>
-                <li>Pescado frito con arroz de coco, patacón y ensalada</li>
-                <li>Sancocho de gallina criolla</li>
-                <li>Viudo de pescado</li>
-                <li>Carne asada con yuca y suero costeño</li>
-                <li>Arroz con coco acompañado de pescado o camarones</li>
-                <li>Costillas de cerdo con patacones</li>
-            </ul>
-
-        </details>
-
-        <!-- CENAS -->
-        <details>
-
-            <summary>🌙 Cenas</summary>
-
-            <ul>
-                <li>Sancocho de gallina</li>
-                <li>Sopa de mondongo</li>
-                <li>Pescado frito con patacón</li>
-                <li>Carne asada con yuca y suero costeño</li>
-                <li>Arepa de huevo con queso costeño</li>
-                <li>Hamburguesa especial de la casa</li>
-            </ul>
-
-        </details>
-
-                <!-- COMIDA RÁPIDA -->
-        <details>
-
-            <summary>🍔 Comida Rápida</summary>
-
-            <ul>
-                <li>Hamburguesa sencilla</li>
-                <li>Hamburguesa doble</li>
-                <li>Perro caliente especial</li>
-                <li>Salchipapa</li>
-                <li>Nuggets con papas</li>
-            </ul>
-
-        </details>
-
-        <!-- SÁNDWICHES -->
-        <details>
-
-            <summary>🥪 Sándwiches</summary>
-
-            <ul>
-                <li>Sándwich de pollo</li>
-                <li>Sándwich de jamón y queso</li>
-                <li>Sándwich mixto</li>
-                <li>Sándwich vegetariano</li>
-            </ul>
-
-        </details>
-
-        <!-- PIZZAS -->
-        <details>
-
-            <summary>🍕 Pizzas</summary>
-
-            <ul>
-                <li>Hawaiana</li>
-                <li>Pepperoni</li>
-                <li>Ranchera</li>
-                <li>Especial de la casa</li>
-            </ul>
-
-        </details>
-
-        <!-- ENSALADAS -->
-        <details>
-
-            <summary>🥗 Ensaladas</summary>
-
-            <ul>
-                <li>Ensalada César</li>
-                <li>Ensalada de pollo</li>
-                <li>Ensalada tropical</li>
-                <li>Ensalada mixta</li>
-            </ul>
-
-        </details>
-
-        <!-- POSTRES -->
-        <details>
-
-            <summary>🍰 Postres</summary>
-
-            <ul>
-                <li>Tres leches</li>
-                <li>Arroz con leche</li>
-                <li>Flan de caramelo</li>
-                <li>Oblea con arequipe</li>
-                <li>Helado</li>
-            </ul>
-
-        </details>
-
-        <!-- BEBIDAS -->
-        <details>
-
-            <summary>🥤 Bebidas</summary>
-
-            <ul>
-                <li>Agua</li>
-                <li>Gaseosa</li>
-                <li>Limonada natural</li>
-                <li>Jugo de maracuyá</li>
-                <li>Jugo de mora</li>
-            </ul>
-
-        </details>
-
-    </section>
-
-        <!-- ========================= -->
-    <!-- PROMOCIONES -->
-    <!-- ========================= -->
-    <section id="promociones">
-
-        <h2>🎉 Promociones</h2>
-
-        <div class="promo-card">
-            <h3>🍕 Martes de Pizza</h3>
-            <p>Todas las pizzas con un 20% de descuento.</p>
-        </div>
-
-        <div class="promo-card">
-            <h3>🥤 Combo Especial</h3>
-            <p>Hamburguesa clásica + papas + gaseosa por solo <strong>$28.000</strong>.</p>
-        </div>
-
-        <div class="promo-card">
-            <h3>🍰 Postre Gratis</h3>
-            <p>Por compras superiores a $80.000 recibe un postre de cortesía.</p>
-        </div>
-
-    </section>
-
-    <!-- ========================= -->
-    <!-- GALERÍA -->
-    <!-- ========================= -->
-    <section id="galeria">
-
-        <h2>📸 Galería</h2>
-
-        <div class="galeria">
-
-            <img src="img/galeria1.jpg" alt="Plato 1">
-            <img src="img/galeria2.jpg" alt="Plato 2">
-            <img src="img/galeria3.jpg" alt="Plato 3">
-            <img src="img/galeria4.jpg" alt="Plato 4">
-            <img src="img/galeria5.jpg" alt="Plato 5">
-            <img src="img/galeria6.jpg" alt="Plato 6">
+            <p>Con dedicación y calidad.</p>
 
         </div>
 
-    </section>
+        <div class="beneficio">
 
-    <!-- ========================= -->
-    <!-- CÓDIGO QR -->
-    <!-- ========================= -->
-    <section id="qr">
+            <h4>El mejor sabor</h4>
 
-        <h2>📱 Escanea nuestro Código QR</h2>
+            <p>Recetas tradicionales de la región.</p>
 
-        <p>
-            Escanea el código QR para acceder rápidamente
-            al menú digital de Restaurante Fusión.
-        </p>
+        </div>
 
-        <img src="img/qr.png" alt="Código QR">
+    </div>
 
-    </section>
+</section>
 
-    <!-- ========================= -->
-    <!-- PIE DE PÁGINA -->
-    <!-- ========================= -->
-    <footer>
+<!--==================================
+NUESTRO MENÚ
+===================================-->
 
-        <p>© 2026 Restaurante Fusión | Todos los derechos reservados.</p>
+<section id="menu">
 
-    </footer>
+    <h2>Nuestro Menú</h2>
 
-    <!-- JavaScript -->
-    <script src="script.js"></script>
+    <div class="contenedor-menu">
+    <!-- ==========================
+     DESAYUNOS
+========================== -->
+
+<div class="categoria">
+
+    <img src="img/desayunos.jpg" alt="Desayunos">
+
+    <h3>Desayunos</h3>
+
+    <div class="platos oculto">
+
+        <button>Calentado con huevo</button>
+
+        <button>Arepa con queso</button>
+
+        <button>Caldo de costilla</button>
+
+        <button>Tamal con chocolate</button>
+
+        <button>Huevos pericos</button>
+
+    </div>
+
+</div>
+
+<!-- ==========================
+     ALMUERZOS
+========================== -->
+
+<div class="categoria">
+
+    <img src="img/almuerzos.jpg" alt="Almuerzos">
+
+    <h3>Almuerzos</h3>
+
+    <div class="platos oculto">
+
+        <button>Bagre frito</button>
+
+        <button>Mojarra frita</button>
+
+        <button>Sancocho de gallina</button>
+
+        <button>Carne asada</button>
+
+        <button>Arroz con pollo</button>
+
+    </div>
+
+</div>
+
+<!-- ==========================
+     CENAS
+========================== -->
+
+<div class="categoria">
+
+    <img src="img/cenas.jpg" alt="Cenas">
+
+    <h3>Cenas</h3>
+
+    <div class="platos oculto">
+
+        <button>Arepa con queso costeño</button>
+
+        <button>Patacón con carne desmechada</button>
+
+        <button>Hamburguesa artesanal</button>
+
+        <button>Perro caliente especial</button>
+
+        <button>Sopa de pollo</button>
+
+    </div>
+
+</div>
+
+<!-- ==========================
+     COMIDA RÁPIDA
+========================== -->
+
+<div class="categoria">
+
+    <img src="img/comida-rapida.jpg" alt="Comida rápida">
+
+    <h3>Comida rápida</h3>
+
+    <div class="platos oculto">
+
+        <button>Hamburguesa sencilla</button>
+
+        <button>Hamburguesa doble</button>
+
+        <button>Perro especial</button>
+
+        <button>Salchipapa</button>
+
+        <button>Nuggets con papas</button>
+
+    </div>
+
+</div>
+
+<!-- ==========================
+     SÁNDWICHES
+========================== -->
+
+<div class="categoria">
+
+    <img src="img/sandwiches.jpg" alt="Sándwiches">
+
+    <h3>Sándwiches</h3>
+
+    <div class="platos oculto">
+
+        <button>Pollo</button>
+
+        <button>Jamón y queso</button>
+
+        <button>Mixto</button>
+
+        <button>Vegetariano</button>
+
+    </div>
+
+</div>
+
+<!-- ==========================
+     PIZZAS
+========================== -->
+
+<div class="categoria">
+
+    <img src="img/pizzas.jpg" alt="Pizzas">
+
+    <h3>Pizzas</h3>
+
+    <div class="platos oculto">
+
+        <button>Hawaiana</button>
+
+        <button>Pepperoni</button>
+
+        <button>Ranchera</button>
+
+        <button>Especial de la casa</button>
+
+    </div>
+
+</div>
+
+<!-- ==========================
+     ENSALADAS
+========================== -->
+
+<div class="categoria">
+
+    <img src="img/ensaladas.jpg" alt="Ensaladas">
+
+    <h3>Ensaladas</h3>
+
+    <div class="platos oculto">
+
+        <button>Ensalada César</button>
+
+        <button>Ensalada de pollo</button>
+
+        <button>Ensalada tropical</button>
+
+        <button>Ensalada mixta</button>
+
+    </div>
+
+</div>
+
+<!-- ==========================
+     POSTRES
+========================== -->
+
+<div class="categoria">
+
+    <img src="img/postres.jpg" alt="Postres">
+
+    <h3>Postres</h3>
+
+    <div class="platos oculto">
+
+        <button>Tres leches</button>
+
+        <button>Arroz con leche</button>
+
+        <button>Flan de caramelo</button>
+
+        <button>Oblea con arequipe</button>
+
+        <button>Helado</button>
+
+    </div>
+
+</div>
+
+<!-- ==========================
+     BEBIDAS
+========================== -->
+
+<div class="categoria">
+
+    <img src="img/bebidas.jpg" alt="Bebidas">
+
+    <h3>Bebidas</h3>
+
+    <div class="platos oculto">
+
+        <button>Agua</button>
+
+        <button>Gaseosa</button>
+
+        <button>Limonada natural</button>
+
+        <button>Jugo de maracuyá</button>
+
+        <button>Jugo de mora</button>
+
+    </div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ==========================
+     PROMOCIONES
+========================== -->
+
+<section id="promociones">
+
+    <h2>Promociones Especiales</h2>
+
+    <div class="contenedor-promociones">
+
+        <div class="promocion">
+
+            <img src="img/promo1.jpg" alt="Promoción 1">
+
+            <h3>Martes de Hamburguesas</h3>
+
+            <p>20% de descuento.</p>
+
+        </div>
+
+        <div class="promocion">
+
+            <img src="img/promo2.jpg" alt="Promoción 2">
+
+            <h3>Pizza Familiar</h3>
+
+            <p>Lleva una segunda pizza a mitad de precio.</p>
+
+        </div>
+
+        <div class="promocion">
+
+            <img src="img/promo3.jpg" alt="Promoción 3">
+
+            <h3>Postres</h3>
+
+            <p>15% de descuento todos los días.</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ==========================
+     GALERÍA
+========================== -->
+
+<section id="galeria">
+
+    <h2>Galería</h2>
+
+    <div class="contenedor-galeria">
+
+        <img src="img/galeria1.jpg" alt="">
+        <img src="img/galeria2.jpg" alt="">
+        <img src="img/galeria3.jpg" alt="">
+        <img src="img/galeria4.jpg" alt="">
+        <img src="img/galeria5.jpg" alt="">
+        <img src="img/galeria6.jpg" alt="">
+
+    </div>
+
+</section>
+
+<!-- ==========================
+     PEDIDOS
+========================== -->
+
+<section id="pedidos">
+
+    <h2>Pedidos</h2>
+
+    <p>Haz clic en cualquier plato del menú para realizar tu pedido.</p>
+
+</section>
+
+<!-- ==========================
+     CÓDIGO QR
+========================== -->
+
+<section id="codigoQR">
+
+    <h2>Menú Digital</h2>
+
+    <p>Escanea el código QR y descubre nuestro menú.</p>
+
+    <img src="img/qr.png" alt="Código QR">
+
+</section>
+
+<!-- ==========================
+     PIE DE PÁGINA
+========================== -->
+
+<footer>
+
+    <div class="footer-logo">
+
+        <img src="img/logo.png" alt="Logo">
+
+    </div>
+
+    <div>
+
+        <h3>Síguenos</h3>
+
+        <p>Facebook | Instagram | TikTok | WhatsApp</p>
+
+    </div>
+
+    <div>
+
+        <h3>Horario de Atención</h3>
+
+        <p>Lunes a Domingo</p>
+
+        <p>8:00 a.m. - 10:00 p.m.</p>
+
+    </div>
+
+    <div>
+
+        <h3>Menú Digital</h3>
+
+        <img src="img/qr.png" alt="QR">
+
+    </div>
+
+</footer>
+
+<div class="copyright">
+
+    <p>
+
+        © 2026 Restaurante Fusión | Todos los derechos reservados.
+
+        <br>
+
+        Desarrollado por <strong>Valeris Causil</strong>
+
+    </p>
+
+</div>
+
+</main>
+
+<script src="script.js"></script>
 
 </body>
+
 </html>
