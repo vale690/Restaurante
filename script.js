@@ -1,19 +1,44 @@
-/* BUSCADOR DE PLATOS */
+/*=========================================
+  RESTAURANTE FUSIÓN
+=========================================*/
 
-const buscador = document.getElementById("buscar");
-const filas = document.querySelectorAll("#tablaPlatos tr");
+document.addEventListener("DOMContentLoaded", () => {
 
-buscador.addEventListener("keyup", function () {
-    const texto = buscador.value.toLowerCase();
+    // ==============================
+    // BOTÓN VER MENÚ
+    // ==============================
 
-    filas.forEach(fila => {
-        const plato = fila.cells[0].textContent.toLowerCase();
-        const categoria = fila.cells[1].textContent.toLowerCase();
+    const botonMenu = document.querySelector("#inicio button");
 
-        if (plato.includes(texto) || categoria.includes(texto)) {
-            fila.style.display = "";
-        } else {
-            fila.style.display = "none";
-        }
-    });
+    if (botonMenu) {
+        botonMenu.addEventListener("click", () => {
+
+            document.querySelector("#menu").scrollIntoView({
+                behavior: "smooth"
+            });
+
+        });
+    }
+
+    // ==============================
+    // MENSAJE PLATO DEL DÍA
+    // ==============================
+
+    const botonPlato = document.querySelector(".plato-info button");
+
+    if (botonPlato) {
+
+        botonPlato.addEventListener("click", () => {
+
+            alert(
+                "⭐ Plato del Día\n\n" +
+                "Pescado Frito con Arroz de Coco\n\n" +
+                "Precio: $32.000\n\n" +
+                "Delicioso pescado frito acompañado de arroz de coco, patacón y ensalada fresca."
+            );
+
+        });
+
+    }
+
 });
